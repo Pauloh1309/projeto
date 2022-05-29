@@ -19,10 +19,10 @@ from django.urls import path
 
 
 def my_view(request):
-    return HttpResponse('teste')
+    return HttpResponse('TESTANDO')
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(' ', my_view),
+    path('sobre/', my_view),
 ]
